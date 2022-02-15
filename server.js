@@ -24,8 +24,8 @@ app.get("/", (req, res) => {
 let mailTransporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-      user: 'attendenceflipp@gmail.com',
-      pass: 'attendenceform'
+      user: 'demonyatoclan@gmail.com',
+      pass: 'ojasfriendadvait'
   }
 });
 
@@ -38,8 +38,8 @@ console.log(print)
 
 
 let mailDetails = {
-  from: 'attendenceflipp@gmail.com',
-  to: 'attendenceflipp@gmail.com',
+  from: 'demonyatoclan@gmail.com',
+  to: 'demonyatoclan@gmail.com',
   subject: 'Attendance',
     text: "Details:" + " " + JSON.stringify(print),
     attachments: [{'filename': req.file.originalname,
