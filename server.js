@@ -38,8 +38,8 @@ console.log(print)
 
 
 let mailDetails = {
-  from: ' attendenceflipp@gmail.com',
-  to: ' attendenceflipp@gmail.com',
+  from: 'attendenceflipp@gmail.com',
+  to: 'attendenceflipp@gmail.com',
   subject: 'Attendance',
     text: "Details:" + " " + JSON.stringify(print),
     attachments: [{'filename': req.file.originalname,
